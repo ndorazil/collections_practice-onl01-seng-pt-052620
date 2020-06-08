@@ -29,11 +29,8 @@ end
 
 
 def find_a(fruits)
-  a_fruits = []
   fruits.map do |fruit|
-    if fruit.start_with?("a")
-      fruit << a_fruits
-    end
+    fruit.start_with?("a")
   end
-  a_fruits
+  fruits
 end
