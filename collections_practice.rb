@@ -29,5 +29,6 @@ end
 
 
 def find_a(fruits)
-  a_fruits = fruits.select { |fruit| 
+  a_fruits = fruits.select { |fruit| fruit.start_with?("a") }
+  return a_fruits
 end
