@@ -32,5 +32,4 @@ def find_a(fruits)
   fruits.map do |fruit|
     fruit.start_with?("a")
   end
-  fruits
 end
