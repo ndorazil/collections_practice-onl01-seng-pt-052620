@@ -37,6 +37,14 @@ def sum_array(numbers)
   numbers.inject(:+)
 end
 
-def add_s(singular_words)
-  
+def add_s(group)
+  array_with_s = [ ]
+  group.each_with_index do |item, indx| 
+    if indx == 1
+      array_with_s << item
+    else 
+      array_with_s << item + "s"
+    end
+  end
+  array_with_s
 end
