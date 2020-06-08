@@ -29,7 +29,10 @@ end
 
 
 def find_a(fruits)
-  fruits.map do |fruit|
-    fruit.start_with?("a")
+  a_fruits = []
+  fruits.each do |fruit|
+    if fruit.start_with?("a")
+      fruit << a_fruits
+    end
   end
 end
