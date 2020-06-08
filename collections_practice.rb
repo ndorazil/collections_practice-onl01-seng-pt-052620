@@ -34,5 +34,5 @@ def find_a(fruits)
 end
 
 def sum_array(numbers)
-  
+  numbers.inject(:+)
 end
