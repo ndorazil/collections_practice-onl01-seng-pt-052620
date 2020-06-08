@@ -37,4 +37,6 @@ def sum_array(numbers)
   numbers.inject(:+)
 end
 
-def add_s(words)
+def add_s(singular_words)
+  
+end
