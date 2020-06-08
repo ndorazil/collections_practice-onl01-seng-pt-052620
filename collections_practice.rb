@@ -35,4 +35,5 @@ def find_a(fruits)
       fruit << a_fruits
     end
   end
+  a_fruits
 end
