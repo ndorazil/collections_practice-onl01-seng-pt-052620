@@ -20,18 +20,19 @@ def swap_elements(swap)
 end
 
 def reverse_array(reverse_num)
-    reverse_num.reverse
+  reverse_num.reverse
 end
 
 def kesha_maker(names)
-    names.each { |name| name[2] = "$"}
+  names.each { |name| name[2] = "$"}
 end
 
 
 def find_a(fruits)
-    fruits.collect do |fruit|
-        fruit.start_with?("a")
-        return fruit
-    end
-    fruits
+  a_fruits = []
+  fruits.collect do |fruit|
+    fruit.start_with?("a")
+    fruit << a_fruits
+  end
+  a_fruits
 end
