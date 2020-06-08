@@ -31,8 +31,9 @@ end
 def find_a(fruits)
   a_fruits = []
   fruits.collect do |fruit|
-    fruit.start_with?("a")
-    fruit << a_fruits
+    if fruit.start_with?("a")
+      fruit << a_fruits
+    end
   end
   a_fruits
 end
