@@ -30,7 +30,7 @@ end
 
 def find_a(fruits)
   a_fruits = []
-  fruits.selects do |fruit|
+  fruits.select! do |fruit|
     if fruit.start_with?("a")
       fruit << a_fruits
     end
