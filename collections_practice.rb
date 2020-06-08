@@ -32,7 +32,7 @@ def find_a(fruits)
   a_fruits = []
   fruits.each do |fruit|
     if fruit.start_with?("a")
-      fruit << a_fruits
+      return fruit
     end
   end
 end
